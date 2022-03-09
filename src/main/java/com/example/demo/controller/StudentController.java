@@ -26,7 +26,8 @@ public class StudentController {
     @GetMapping(value = "/students", consumes = "application/json", produces = "application/json"
     )
     public List<Student> getStudent() {
-        return studentServices.getAllStudents();
+        throw new RuntimeException("This is exception");
+//        return studentServices.getAllStudents();
     }
 
 //    @GetMapping(value="GetIdByValue/{id}" , produces = "application/xml")
